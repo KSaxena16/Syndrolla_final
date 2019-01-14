@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Syndrolla</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="C:\Users\kanchan\Desktop\Syndrolla\assets\css">
+  <script src="C:\Users\kanchan\Desktop\Syndrolla\assets\js" type="text/javascript></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <link rel="shortcut icon" type="image/x-ico" href="assets/images/favicon.ico"/>
+  <link href="assets/css/font-awesome.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+</head>
+<style>
+  body
+  {
+    height: 100%;
+  }
+
+  #navbar-default
+  {
+    background: none;
+    border: none;
+  }
+
+  #home-background-image
+  {
+    width: 100%;
+    height: 100%;
+  }
+
+ nav.navbar
+ {
+   margin-bottom: 0px;
+   background: transparent;
+   border: none;
+ }
+
+
+ #bs-example-navbar-collapse-1>.navbar-nav>li>a
+ {
+    color: #797E7B;
+    font-size: 20px;
+
+ }
+
+ #home{
+   position: relative;
+   height: 400px;
+   margin: 0px;
+ }
+
+ #home .container{
+   position: absolute;
+   width: 100%;
+   letter-spacing: 10px;
+   top: 45%;
+   font-family: 'Roboto Slab', serif;
+ }
+
+ #home h1{
+   color: white;
+   font-size: 6vw;
+   font-weight: 300;
+   padding: 10px;
+ }
+
+ hr{
+   width: 60%;
+   border: 1px solid white;
+ }
+
+ #home h3{
+   text-align: center;
+   letter-spacing: normal;
+   color: white;
+   margin-top: 30px;
+ }
+
+
+ section{
+   min-height: 600px;
+   margin-top: 50px;
+ }
+
+ section .heading-line
+ {
+   border: 1px solid brown;
+   margin-top:20px;
+   width: 50%
+ }
+
+ .creative-para
+ {
+    color: gray;
+    margin: 40px 30px 30px 55px;
+ }
+
+ #About-us img
+ {
+   margin-bottom:30px;
+ }
+
+ #What-we-do
+ {
+   min-height: 400px;
+ }
+
+ #What-we-do span
+ {
+   font-size:100px;
+   color: green;
+ }
+
+ #What-we-do .icon
+ {
+   margin-top: 50px;
+ }
+
+ #team .team
+ {
+   border: 0.5px solid gainsboro;
+ }
+
+ #team img
+ {
+   border: 2px solid goldenrod;
+   width: 40%;
+   margin: 0px auto;
+ }
+
+ #team img:hover
+ {
+   width: 45%;
+ }
+
+ #team h4
+ {
+   color: gray;
+ }
+
+ #team h3
+ {
+   padding: 20px;
+ }
+
+ .link a
+ {
+   color: gray;
+   font-size: 20px;
+   margin: 10px;
+ }
+
+ .link a:hover
+ {
+   color: #12BBF1;
+   font-size: 25px;
+ }
+ .contact {
+   padding: 25px 0 20px 0;
+}
+
+ .contact i {
+   padding: 0 20px;
+   font-size: 0.8em;
+ }
+
+ #comments {
+   margin-top: 0;
+ }
+
+ #contactform {
+   height: 215px;
+ }
+
+ #contactform .right {
+   float: right;
+ }
+
+ #contactform input,
+ #contactform textarea {
+   margin-bottom: 14px;
+   width: 100%;
+   outline: none;
+   border: none;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-size: 11px;
+ }
+
+ #contactform input {
+   padding-left: 15px;
+   height: 44px;
+   border-radius: 0;
+ }
+
+#contactform input:hover{
+  border-bottom: 1px solid goldenrod;
+}
+
+ #contactform textarea {
+   padding: 15px;
+   height: 218px;
+   border-radius: 0;
+ }
+
+ #contactform textarea:hover{
+   border-bottom: 1px solid goldenrod;
+ }
+
+
+ #contactform .btn {
+   width: 100%;
+   height: 50px;
+   border-radius: 0;
+   background: rgb(8,199,250);
+   color: #fff;
+ }
+
+ #contactform .btn:hover {
+   background: rgb(8,250,89);
+ }
+
+ #map-canvas {
+   width: 100%;
+   height: 400px;
+   margin-bottom: 15px;
+   border: 2px solid #fff;
+</style>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="#">Syndrolla</a>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#About-us">About Us</a></li>
+                  <li><a href="#What-we-do">What We Do</a></li>
+                  <li><a href="#team">Team</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  </ul>
+              </div>
+            </div>
+          </nav>
+
+    <section id="home">
+      <img id="home-background-image" src="assets/images/ios4.jpg">
+      <div class="container">
+        <div class="row">
+          <h1 class="text-center">Syndrolla</h1>
+          <hr>
+          <h3>A website of startup</h3>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="About-us">
+      <div class="container">
+        <div class="row">
+          <h1 class="text-center"><b>About Syndrolla</b></h1>
+            <hr class="heading-line">
+            <h4 class="creative-para">Syndolla is a Startup which which works on Web designing,Android devlopment, IOS devlopment and Full Stack devlopemnt. We Create Websites, apps and takes contracts, and satisfies our customer's requirement.</h4>
+              <div class="row">
+                <div class="col-md-4 col-xs-4">
+                  <img class="img-responsive" src="assets/images/webdesign3.jpg">
+                  <img class="img-responsive" src="assets/images/webdevlopment2.jpg">
+                  <img class="img-responsive" src="assets/images/webdesign2.jpg">
+                </div>
+                <div class="col-md-4 col-xs-4">
+                  <img class="img-responsive" src="assets/images/ios.jpg">
+                  <img class="img-responsive" src="assets/images/ios2.jpg">
+                  <img class="img-responsive" src="assets/images/ios1.jpg">
+                </div>
+                <div class="col-md-4 col-xs-4">
+                  <img class="img-responsive" src="assets/images/android1.jpg">
+                  <img class="img-responsive" src="assets/images/android2.jpeg">
+                  <img class="img-responsive" src="assets/images/webdesign.jpeg">
+                </div>
+              </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="What-we-do">
+      <div class="container">
+        <div class="row">
+            <h1 class="text-center"><b>What We Do</b></h1>
+          <hr class="heading-line">
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-3 text-center icon">
+                    <span>
+                      <i class="fa fa-android" aria-hidden="true"></i>
+                    </span>
+                    <h2>Android devlopment</h2>
+                    <h4 class="what-para">The moment we receive a new mobile app development project, we start to get building various wireframes for the app project. Those mockups are presented to the clients for reference. Based on the shortlisted mockups, the final prototype is presented to the client. The app development kicks as soon as the client approves the prototype.</h4>
+                  </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3 text-center icon">
+                  <span>
+                    <i class="fa fa-apple" aria-hidden="true"></i>
+                  </span>
+                  <h2>Ios Devlopment</h2>
+                  <h4 class="what-para">Hundreds of hours of our developers’ time goes into coding. That’s what they do. At times, the code isn’t self sufficient and must be interfaced with a third party service or a hardware component. Not every block of program is perfect and must be debugged a number of times before being integrated into the source code.</h4>
+                </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 text-center icon">
+                <span>
+                  <i class="fa fa-laptop" aria-hidden="true"></i>
+                </span>
+                <h2>Full Stack Devlopment</h2>
+                <h4 class="what-para">We have become an expert in the whole lot that goes into developing front-end and back-end, working on both sides to accelerate the development cycles. Our full-stack developers have a wide experience switching roles between frontend and backend development delivering end-to-end solution to our customers.</h4>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-3 text-center icon">
+                    <span>
+                      <i class="fa fa-bug" aria-hidden="true"></i>
+                    </span>
+                    <h2>WebDevlopment</h2>
+                    <h4 class="what-para">Our web development company has been developing web applications for the custom business requirements of all our esteemed clients. Our developer’s skills & experience and cutting-edge technology will deliver you with Robust Web Applications.</h4>
+                  </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="team">
+      <div class="container">
+        <div class="row">
+          <h1 class="text-center"><b>Team</b></h1>
+            <hr class="heading-line">
+            <br>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4">
+                    <img src="assets/images/anoop.jpg" class="img-responsive img-circle">
+                      <h3 class="text-center">Anoop Katoch</h3>
+                      <h4>Anoop Katoch is the CEO of company and takes care of growth of company, software devlopment. He is analytical, driven and adapts easily to new conditions, while trying to keep everyone on track.</h4>
+                      <hr class="team">
+                      <div class="link text-center">
+                        <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                        <a href="http://twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                    <img src="assets/images/shubham.jpg" class="img-responsive img-circle">
+                      <h3 class="text-center">Shubham Guleria</h3>
+                      <h4>Shubham Guleria is the COO of company, he's the person behind our copmany's operational task management, he takes care of our users' community and communication.He is ambitious, hard-working, instantly likeable and fun to be around.</h4>
+                      <hr class="team">
+                      <div class="link text-center">
+                        <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                        <a href="http://twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                    <img src="assets/images/sahil.jpg" class="img-responsive img-circle">
+                      <h3 class="text-center">Sahil Katoch</h3>
+                      <h4>Sahil Katoch is the CFO of the company,he drives the technical strategy of the platform, customer support and brand. He is level-headed, smart and with a taste for simple, aesthetic design.</h4>
+                      <hr class="team">
+                      <div class="link text-center">
+                        <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                        <a href="http://twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+    </section>
+
+
+  <section class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center">Contact</h2>
+                    <hr class="heading-line">
+                    <br>
+                </div>
+            </div>
+            <div id="map-canvas"></div>
+            <div class="row">
+                <form method="post" action="contact.php" name="contactform" id="contactform">
+                    <div class="col-md-6">
+                        <fieldset>
+                            <input name="name" type="text" id="Name" size="30" placeholder="Name">
+                            <br>
+                            <input name="email" type="text" id="Email" size="30" placeholder="Email">
+                            <br>
+                            <input name="phone" type="text" id="Phone" size="30" placeholder="Phone">
+                           <br>
+                        </fieldset>
+                    </div>
+                    <div class="col-md-6">
+                        <fieldset>
+                            <textarea name="comments" cols="40" rows="20" id="Comments" placeholder="Message"></textarea>
+                        </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                        <fieldset>
+                            <button type="submit" class="btn btn-lg" id="submit" value="Submit">Send Message</button>
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--Google Maps API-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnycWatbGyK6ldFqErjFtko1yeMclNUOA&amp;sensor=true"></script>
+
+
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+                  <!-- Include all compiled plugins (below), or include individual files as needed -->
+                  <script src="assets/js/bootstrap.js"></script>
+
+<script>
+  function initialize() {
+            var mapOptions = {
+                center: new google.maps.LatLng(28.1823294, -82.352912),
+                zoom: 13,
+                mapTypeId: google.maps.MapTypeId.HYBRID,
+                scrollwheel: false,
+                draggable: false,
+                panControl: true,
+                zoomControl: true,
+                mapTypeControl: true,
+                scaleControl: true,
+                streetViewControl: true,
+                overviewMapControl: true,
+                rotateControl: true,
+            };
+            var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</body>
+</html>
